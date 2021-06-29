@@ -1,0 +1,5 @@
+Commands to run:
+
+mvn clean package
+
+docker build . -t addressbook

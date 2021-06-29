@@ -4,4 +4,8 @@ mvn clean package
 
 docker build . -t addressbook
 
-docker run -p 8888:8080 -d addressbook
+docker container rm -f addressbook
+
+docker run -p 8888:8080 -d --name addressbook addressbook
+
+access the application on http://localhost:8888/addressbook

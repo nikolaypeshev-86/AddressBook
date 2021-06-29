@@ -3,3 +3,5 @@ Commands to run:
 mvn clean package
 
 docker build . -t addressbook
+
+docker run -p 8888:8080 -d addressbook
